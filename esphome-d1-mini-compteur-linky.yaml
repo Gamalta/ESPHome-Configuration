@@ -1,0 +1,212 @@
+esphome:
+  name: esphome-d1-mini-compteur-linky
+  friendly_name: ESPHome D1 mini Compteur Linky
+
+esp8266:
+  board: esp01_1m
+
+# Enable logging
+logger:
+
+# Enable Home Assistant API
+api:
+  encryption:
+    key: !secret esphome_d1_mini_compteur_linky_api_key
+
+ota:
+  password: !secret esphome_d1_mini_compteur_linky_ota_password
+
+wifi:
+  ssid: !secret wifi_ssid
+  password: !secret wifi_password
+
+  # Enable fallback hotspot (captive portal) in case wifi connection fails
+  ap:
+    ssid: "Esphome-D1-Mini-Compteur-Linky"
+    password: "u5A67JaA6KvF"
+
+captive_portal:
+    
+uart:
+  id: uart_bus
+  rx_pin: GPIO13
+  tx_pin: GPIO12
+  baud_rate: 1200
+  parity: EVEN
+  data_bits: 7
+
+teleinfo:
+  id: monCompteur
+  update_interval: 60s
+  historical_mode: true
+
+text_sensor:
+  #Adresse du compteur
+  - platform: teleinfo
+    teleinfo_id: monCompteur
+    tag_name: "ADCO"
+    name: "ADCO"
+
+  #Option tarifaire choisie  
+  - platform: teleinfo
+    teleinfo_id: monCompteur
+    tag_name: "OPTARIF"
+    name: "OPTARIF"
+
+  #Période Tarifaire en cours
+  - platform: teleinfo
+    teleinfo_id: monCompteur
+    tag_name: "PTEC"
+    name: "PTEC"
+
+  #Couleur du lendemain
+  #- platform: teleinfo
+  #  teleinfo_id: monCompteur
+  #  tag_name: "DEMAIN"
+  #  name: "DEMAIN"
+
+  #Horaire Heures Pleines Heures Creuses
+  #- platform: teleinfo
+  #  teleinfo_id: monCompteur
+  #  tag_name: "HHPHC"
+  #  name: "HHPHC"
+
+  #Mot d'état du compteur
+  - platform: teleinfo
+    teleinfo_id: monCompteur
+    tag_name: "MOTDETAT"
+    name: "MOTDETAT"
+
+
+sensor:
+  #Intensité souscrite
+  - platform: teleinfo
+    teleinfo_id: monCompteur
+    tag_name: "ISOUSC"
+    name: "ISOUSC"
+    unit_of_measurement: "A"
+
+  #Index option Base
+  #- platform: teleinfo
+  #  teleinfo_id: monCompteur
+  #  tag_name: "HCHC"
+  #  name: "HCHC"
+  #  icon: mdi:flash
+  #  unit_of_measurement: "Wh"
+
+  #Index option Heures Creuses
+  - platform: teleinfo
+    teleinfo_id: monCompteur
+    tag_name: "HCHC"
+    name: "HCHC"
+    icon: mdi:flash
+    state_class: "total_increasing"
+    device_class: "energy"
+    unit_of_measurement: "Wh"
+
+  #Index option Heures Pleines
+  - platform: teleinfo
+    teleinfo_id: monCompteur
+    tag_name: "HCHP"
+    name: "HCHP"
+    icon: mdi:flash
+    state_class: "total_increasing"
+    device_class: "energy"
+    unit_of_measurement: "Wh"
+
+  #Index option EJP Heures Normales
+  #- platform: teleinfo
+  #  teleinfo_id: monCompteur
+  #  tag_name: "EJPHN"
+  #  name: "EJPHN"
+  #  unit_of_measurement: "Wh"  
+
+  #Index option EJP Heures de Pointe Mobile
+  #- platform: teleinfo
+  #  teleinfo_id: monCompteur
+  #  tag_name: "EJPHPM"
+  #  name: "EJPHPM"
+  #  unit_of_measurement: "Wh"
+
+  #Index option Tempo Heures Creuses Jours Bleus
+  #- platform: teleinfo
+  #  teleinfo_id: monCompteur
+  #  tag_name: "BBRHCJB"
+  #  name: "BBRHCJB"
+  #  unit_of_measurement: "Wh"  
+
+  #Index option Tempo Heures Pleines Jours Bleus
+  #- platform: teleinfo
+  #  teleinfo_id: monCompteur
+  #  tag_name: "BBRHPJB"
+  #  name: "BBRHPJB"
+  #  unit_of_measurement: "Wh"
+
+  #Index option Tempo Heures Creuses Jours Blancs
+  #- platform: teleinfo
+  #  teleinfo_id: monCompteur
+  #  tag_name: "BBRHCJW"
+  #  name: "BBRHCJW"
+  #  unit_of_measurement: "Wh"  
+
+  #Index option Tempo Heures Pleines Jours Bleus
+  #- platform: teleinfo
+  #  teleinfo_id: monCompteur
+  #  tag_name: "BBRHPJW"
+  #  name: "BBRHPJW"
+  #  unit_of_measurement: "Wh"
+
+  #Index option Tempo Heures Creuses Jours Rouges
+  #- platform: teleinfo
+  #  teleinfo_id: monCompteur
+  #  tag_name: "BBRHCJR"
+  #  name: "BBRHCJR"
+  #  unit_of_measurement: "Wh"  
+
+  #Index option Tempo Heures Pleines Jours Rouges
+  #- platform: teleinfo
+  #  teleinfo_id: monCompteur
+  #  tag_name: "BBRHPJR"
+  #  name: "BBRHPJR"
+  #  unit_of_measurement: "Wh"
+
+  #Préavis Début EJP (30 min)
+  #- platform: teleinfo
+  #  teleinfo_id: monCompteur
+  #  tag_name: "PEJP"
+  #  name: "PEJP"
+  #  unit_of_measurement: "min"
+
+
+  #Intensité Instantanée
+  - platform: teleinfo
+    teleinfo_id: monCompteur
+    tag_name: "IINST"
+    name: "IINST"
+    icon: mdi:flash
+    unit_of_measurement: "A"
+
+  #Avertissement de Dépassement de Puissance Souscrite
+  - platform: teleinfo
+    teleinfo_id: monCompteur
+    tag_name: "ADPS"
+    name: "ADPS"
+    icon: mdi:flash
+    unit_of_measurement: "A"
+
+  #Intensité maximale appelée
+  - platform: teleinfo
+    teleinfo_id: monCompteur
+    tag_name: "IMAX"
+    name: "IMAX"
+    icon: mdi:flash
+    unit_of_measurement: "A"
+
+  #Puissance apparente 
+  - platform: teleinfo
+    teleinfo_id: monCompteur
+    tag_name: "PAPP"
+    name: "PAPP"
+    icon: mdi:flash
+    unit_of_measurement: "VA"
+
