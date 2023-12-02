@@ -1,0 +1,85 @@
+esphome:
+  name: esphome-32-temperature
+  friendly_name: ESPHome 32 Température
+
+esp32:
+  board: esp32dev
+  framework:
+    type: arduino
+
+# Enable logging
+logger:
+
+# Enable Home Assistant API
+api:
+  encryption:
+    key: !secret esphome_32_temperature_api_key
+
+ota:
+  password: !secret esphome_32_temperature_ota_password
+
+wifi:
+  ssid: !secret wifi_ssid
+  password: !secret wifi_password
+
+  # Enable fallback hotspot (captive portal) in case wifi connection fails
+  ap:
+    ssid: "Esphome-32-Temperature"
+    password: "2hJpZKsbWwXX"
+
+captive_portal:
+    
+esp32_ble_tracker:
+sensor:
+  #Salon
+  - platform: atc_mithermometer
+    mac_address: "A4:C1:38:49:FD:59"
+    temperature:
+      name: "Température Salon"
+    humidity:
+      name: "Humidité Salon"
+    battery_level:
+      name: "ATC Salon Battery-Level"
+    battery_voltage:
+      name: "ATC Salon Battery-Voltage"
+    signal_strength:
+      name: "ATC Salon Signal"
+  #Chambre
+  - platform: atc_mithermometer
+    mac_address: "A4:C1:38:2D:32:8D"
+    temperature:
+      name: "Température Chambre"
+    humidity:
+      name: "Humidité Chambre"
+    battery_level:
+      name: "ATC Chambre Battery-Level"
+    battery_voltage:
+      name: "ATC Chambre Battery-Voltage"
+    signal_strength:
+      name: "ATC Chambre Signal"
+  #Salle de bain
+  - platform: atc_mithermometer
+    mac_address: "A4:C1:38:36:80:5E"
+    temperature:
+      name: "Température Salle de bain"
+    humidity:
+      name: "Humidité Salle de bain"
+    battery_level:
+      name: "ATC Salle de bain Battery-Level"
+    battery_voltage:
+      name: "ATC Salle de bain Battery-Voltage"
+    signal_strength:
+      name: "ATC Salle de bain Signal"
+  #Garage
+  - platform: atc_mithermometer
+    mac_address: "A4:C1:38:7C:DB:B0"
+    temperature:
+      name: "Température Garage"
+    humidity:
+      name: "Humidité Garage"
+    battery_level:
+      name: "ATC Garage Battery-Level"
+    battery_voltage:
+      name: "ATC Garage Battery-Voltage"
+    signal_strength:
+      name: "ATC Garage Signal"
