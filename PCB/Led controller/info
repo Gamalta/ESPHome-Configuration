@@ -1,0 +1,282 @@
+{
+  "uuid": "e1bf49cf144a97b09179480576398544",
+  "path": "Offline/Led%20controller",
+  "name": "Led controller",
+  "content": "",
+  "created_at": "2023-12-25 20:31:25",
+  "updated_at": "2023-12-28 23:11:06",
+  "stick": "",
+  "documents": [
+    {
+      "uuid": "d695edaecf7c974e539ada7c54eda1df",
+      "title": "Sheet_1",
+      "description": "",
+      "docType": "1",
+      "master": "",
+      "thumb": "/images/thumb-default.png",
+      "components": {
+        "db6990ec773743e5960180fa80b4e92d": 1,
+        "bacf5553da266925c44144ce5fdc0a97": 2,
+        "9aba3c4ba0988dc40ae3ce993d20e228": 1,
+        "4512d0647d614f6dae992daed778c73e": 2,
+        "3b425c524008482eab43cdfb6c6630ce": 1,
+        "c4d6ebcdf0f74347baf2febee6020fd2": 1,
+        "6bc87021c356752573363354799bb887": 2,
+        "3d64ac8f7bd34a55b6b49f894c2d1704": 1,
+        "bdb0fbd890e44b33b9494dcee0275acb": 1,
+        "72cb8858e8b9455ea4acd62d22789f66": 1,
+        "bb399bb0c02d408b907116d10264ef51": 1,
+        "a68dc5e6a9944c46b7604648a43dcd65": 2
+      },
+      "BOM": [
+        [
+          "Value",
+          "Quantity",
+          "Package",
+          "Components",
+          "CustomPara"
+        ],
+        [
+          "1uF",
+          2,
+          "C0603",
+          "C1,C2",
+          {
+            "Supplier": "LCSC",
+            "Manufacturer Part": "CL10A105KO8NNNC",
+            "Manufacturer": "SAMSUNG(三星)",
+            "Supplier Part": "C1592",
+            "JLCPCB Part Class": "Extended Part",
+            "spiceSymbolName": "CL10A105KO8NNNC",
+            "puuid": "f8151fdc728a41ebbc304e11d39e5437",
+            "uuid": "6bc87021c356752573363354799bb887"
+          }
+        ],
+        [
+          "HC-DC-005-2.0T",
+          1,
+          "DC-IN-TH_HC-DC-005-2.0T",
+          "DC1",
+          {
+            "Contributor": "lcsc",
+            "Supplier": "LCSC",
+            "Supplier Part": "C3010533",
+            "Manufacturer": "HCTL(华灿天禄)",
+            "Manufacturer Part": "",
+            "JLCPCB Part Class": "Extended Part",
+            "spiceSymbolName": "HC-DC-005-2.0T",
+            "puuid": "f03aeff86f454629a05034513b7ebea7",
+            "uuid": "bdb0fbd890e44b33b9494dcee0275acb"
+          }
+        ],
+        [
+          "64600001003",
+          1,
+          "64600001003",
+          "FH1",
+          {
+            "Contributor": "LCSC",
+            "Supplier": "LCSC",
+            "Supplier Part": "C206887",
+            "Manufacturer": "Littelfuse(美国力特)",
+            "Manufacturer Part": "64600001003",
+            "JLCPCB Part Class": "Extended Part",
+            "spiceSymbolName": "64600001003",
+            "puuid": "ee8405ba375b4f769a48dd4584c8babc",
+            "uuid": "3d64ac8f7bd34a55b6b49f894c2d1704"
+          }
+        ],
+        [
+          "JUMPER",
+          1,
+          "HDR-TH_3P-P2.54-V-M-1",
+          "H1",
+          {
+            "Contributor": "LCSC",
+            "Supplier": "LCSC",
+            "Supplier Part": "C429954",
+            "Manufacturer": "JILN(锦凌)",
+            "Manufacturer Part": "",
+            "JLCPCB Part Class": "Extended Part",
+            "spiceSymbolName": "12251103CNG0S115001",
+            "puuid": "7e70b923819e4f3bb9fdeaf4abdca9d3",
+            "uuid": "bb399bb0c02d408b907116d10264ef51"
+          }
+        ],
+        [
+          "IRM-3638T",
+          1,
+          "OPTO-TH_IRM-3638T",
+          "IR1",
+          {
+            "Supplier": "LCSC",
+            "Manufacturer": "EVERLIGHT(亿光)",
+            "Manufacturer Part": "",
+            "Supplier Part": "C16216",
+            "JLCPCB Part Class": "Extended Part",
+            "spiceSymbolName": "IRM-3638T",
+            "puuid": "f418252a7f60423fb6e96282413d3536",
+            "uuid": "9aba3c4ba0988dc40ae3ce993d20e228"
+          }
+        ],
+        [
+          "TERMINAL BLOCK",
+          2,
+          "HDR-M-2.54_1X3",
+          "J1,J2",
+          {
+            "Supplier Part": "C180248",
+            "Supplier": "LCSC",
+            "Manufacturer": "",
+            "Manufacturer Part": "",
+            "image": "",
+            "Contributor": "LCEDA_Lib",
+            "spiceSymbolName": "HDR-M-2.54_1x3",
+            "puuid": "9f77654394344f25b3de138e0fe05ff6",
+            "uuid": "a68dc5e6a9944c46b7604648a43dcd65"
+          }
+        ],
+        [
+          "Header-Female-2.54_1x8",
+          2,
+          "HDR-TH_8P-P2.54-V-F-1",
+          "P1,P2",
+          {
+            "Supplier": "LCSC",
+            "Manufacturer": "BOOMELE(博穆精密)",
+            "Manufacturer Part": "",
+            "Supplier Part": "C27438",
+            "JLCPCB Part Class": "Extended Part",
+            "spiceSymbolName": "Header-Female-2.54_1x8",
+            "puuid": "366e1b46b2ba4833900571d9613df11d",
+            "uuid": "bacf5553da266925c44144ce5fdc0a97"
+          }
+        ],
+        [
+          "TS-1002S-07026C",
+          1,
+          "KEY-SMD_4P-L6.0-W6.0-P4.50-LS9.0",
+          "SW1",
+          {
+            "Contributor": "LCSC",
+            "Supplier": "LCSC",
+            "Supplier Part": "C455114",
+            "Manufacturer": "XUNPU(讯普)",
+            "Manufacturer Part": "",
+            "JLCPCB Part Class": "Extended Part",
+            "spiceSymbolName": "TS-1002S-07026C",
+            "puuid": "6621ba9502e54f7ca3c917848586657c",
+            "uuid": "db6990ec773743e5960180fa80b4e92d"
+          }
+        ],
+        [
+          "LM7805",
+          1,
+          "TO-220-3_L10.1-W4.7-P2.54-L",
+          "U1",
+          {
+            "Contributor": "lcsc",
+            "Supplier": "LCSC",
+            "Supplier Part": "C7432180",
+            "Manufacturer": "HGSEMI(华冠)",
+            "Manufacturer Part": "",
+            "JLCPCB Part Class": "Extended Part",
+            "spiceSymbolName": "LM7805T_C7432180",
+            "puuid": "d93c981f73094eb8b976517995e76ab7",
+            "uuid": "72cb8858e8b9455ea4acd62d22789f66"
+          }
+        ],
+        [
+          "SN74HCT125N",
+          1,
+          "PDIP-14_L19.3-W6.4-P2.54-LS7.6-BL",
+          "U2",
+          {
+            "Contributor": "LCSC",
+            "Supplier": "LCSC",
+            "Supplier Part": "C154102",
+            "Manufacturer": "Texas Instruments",
+            "Manufacturer Part": "SN74HCT125N",
+            "JLCPCB Part Class": "Extended Part",
+            "spiceSymbolName": "SN74HCT125N",
+            "puuid": "0e8bc615dcc442fdbf2d6252ddb67f56",
+            "uuid": "c4d6ebcdf0f74347baf2febee6020fd2"
+          }
+        ],
+        [
+          "TERMINAL BLOCK",
+          2,
+          "CONN-TH_3P-P5.00_MAX_MX126-5.0-GN01-03P-CU-S-A",
+          "U3,U4",
+          {
+            "Contributor": "lcsc",
+            "Supplier": "LCSC",
+            "Supplier Part": "C5188435",
+            "Manufacturer": "MAX(迈旭)",
+            "Manufacturer Part": "MX126-5.0-GN01-03P-Cu-S-A",
+            "JLCPCB Part Class": "Extended Part",
+            "spiceSymbolName": "MX126-5.0-GN01-03P-CU-S-A",
+            "puuid": "2a0feca3f391477cbe986d8824337928",
+            "uuid": "4512d0647d614f6dae992daed778c73e"
+          }
+        ],
+        [
+          "ESP32 MH-ET LIVE MINIKIT V1.1",
+          1,
+          "ESP32 MH-ET LIVE MINIKIT",
+          "U8",
+          {
+            "Manufacturer": "",
+            "Manufacturer Part": "",
+            "Supplier Part": "",
+            "Supplier": "",
+            "link": "",
+            "Contributor": "goncalomf",
+            "spiceSymbolName": "ESP32 MH-ET LIVE MINIKIT V1.1",
+            "puuid": "88193e0a7e5a46d885a014f56d9fb31e",
+            "uuid": "3b425c524008482eab43cdfb6c6630ce"
+          }
+        ]
+      ],
+      "updateTime": 1703648660,
+      "createTime": 1703532685,
+      "histories": [],
+      "created_at": "2023-12-25 20:31:25",
+      "updated_at": "2023-12-27 04:44:20"
+    },
+    {
+      "uuid": "8b45258246c6e83c3405cc9521444f2c",
+      "puuid": "e1bf49cf144a97b09179480576398544",
+      "title": "PCB_Led controller",
+      "filename": "PCB_Led controller.json",
+      "description": "",
+      "docType": "3",
+      "master": "",
+      "thumb": "/images/thumb-default.png",
+      "components": {
+        "f8151fdc728a41ebbc304e11d39e5437": 2,
+        "f03aeff86f454629a05034513b7ebea7": 1,
+        "ee8405ba375b4f769a48dd4584c8babc": 1,
+        "7e70b923819e4f3bb9fdeaf4abdca9d3": 1,
+        "f418252a7f60423fb6e96282413d3536": 1,
+        "9f77654394344f25b3de138e0fe05ff6": 2,
+        "6621ba9502e54f7ca3c917848586657c": 1,
+        "d93c981f73094eb8b976517995e76ab7": 1,
+        "0e8bc615dcc442fdbf2d6252ddb67f56": 1,
+        "2a0feca3f391477cbe986d8824337928": 2,
+        "366e1b46b2ba4833900571d9613df11d": 2
+      },
+      "BOM": [],
+      "updateTime": 1703712659,
+      "createTime": 1703708106,
+      "histories": [],
+      "created_at": "2023-12-27 21:15:06",
+      "updated_at": "2023-12-27 22:30:59"
+    }
+  ],
+  "sort": [],
+  "title": "Led controller",
+  "foldername": "Led controller",
+  "schfilename": "Led controller.json",
+  "schfilemtime": 1703648660609
+}
