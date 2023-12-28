@@ -1,0 +1,167 @@
+{
+  "uuid": "91469585af087b9a87a407eb5a8b3212",
+  "path": "Offline/Linkee",
+  "name": "Linkee",
+  "content": "",
+  "created_at": "2023-06-07 13:42:58",
+  "updated_at": "2023-12-27 04:03:12",
+  "stick": "",
+  "documents": [
+    {
+      "uuid": "19d9838c2f298c8da596c8e560d603c6",
+      "title": "Sheet_1",
+      "description": "",
+      "docType": "1",
+      "master": "",
+      "thumb": "/images/thumb-default.png",
+      "components": {
+        "f942f8e244294bb7b1d0d99120824d33": 1,
+        "144ae60f7a384aa2b313f18396f312e8": 1,
+        "28c96e247dbf4606b1f42c082b1c4540": 1,
+        "597701dbde98d3183fe5df5fb870ec57": 1,
+        "b210af5a1436310a86e8b108e2e5a90b": 2,
+        "4692b4e310584fa28e192efbb31e9cde": 1
+      },
+      "BOM": [
+        [
+          "Value",
+          "Quantity",
+          "Package",
+          "Components",
+          "CustomPara"
+        ],
+        [
+          "TERMINAL BLOCK",
+          1,
+          "BORNIER2",
+          "J1",
+          {
+            "Contributor": "salydu29",
+            "timeStamp": "1474660645",
+            "sourceId": "5y8IiSrpn",
+            "spiceSymbolName": "Bornier2",
+            "Manufacturer Part": "",
+            "puuid": "a968821d37264fce9151d2e0d075bcec",
+            "uuid": "4692b4e310584fa28e192efbb31e9cde"
+          }
+        ],
+        [
+          "BS170",
+          1,
+          "TO-92-3_L4.9-W3.7-P1.27-L",
+          "Q1",
+          {
+            "Supplier": "LCSC",
+            "Manufacturer": "onsemi(安森美)",
+            "Manufacturer Part": "BS170",
+            "Supplier Part": "C111691",
+            "JLCPCB Part Class": "Extended Part",
+            "spiceSymbolName": "BS170",
+            "puuid": "6924b36489de4921bb29ca14bf27c33f",
+            "uuid": "144ae60f7a384aa2b313f18396f312e8"
+          }
+        ],
+        [
+          "1kΩ",
+          1,
+          "R0603",
+          "R1",
+          {
+            "Supplier": "LCSC",
+            "Manufacturer": "UNI-ROYAL(厚声)",
+            "Manufacturer Part": "0603WAF1001T5E",
+            "Supplier Part": "C21190",
+            "Resistance (Ohms)": "1K",
+            "JLCPCB Part Class": "Basic Part",
+            "spiceSymbolName": "0603WAF1001T5E",
+            "puuid": "398691f1f785460098bbe5ee6590333c",
+            "uuid": "597701dbde98d3183fe5df5fb870ec57"
+          }
+        ],
+        [
+          "10kΩ",
+          2,
+          "R0603",
+          "R2,R3",
+          {
+            "Supplier": "LCSC",
+            "Manufacturer": "UNI-ROYAL(厚声)",
+            "Manufacturer Part": "0603WAF1002T5E",
+            "Supplier Part": "C25804",
+            "Resistance (Ohms)": "10K",
+            "JLCPCB Part Class": "Basic Part",
+            "spiceSymbolName": "0603WAF1002T5E",
+            "puuid": "398691f1f785460098bbe5ee6590333c",
+            "uuid": "b210af5a1436310a86e8b108e2e5a90b"
+          }
+        ],
+        [
+          "WEMOS_D1_MINI_PRO4",
+          1,
+          "DIP-16_WEMOS_D1_MINI_PRO4",
+          "U1",
+          {
+            "Supplier": "LCSC",
+            "Supplier Part": "C2837266",
+            "Manufacturer": "null",
+            "Manufacturer Part": "Wemos_D1_mini_Pro4",
+            "Contributor": "LCSC",
+            "JLCPCB Part Class": "Extended Part",
+            "spiceSymbolName": "WEMOS_D1_MINI_PRO4",
+            "puuid": "562d77a546a24e4f83c78207be689c00",
+            "uuid": "f942f8e244294bb7b1d0d99120824d33"
+          }
+        ],
+        [
+          "LTV814 AC Optocoupler",
+          1,
+          "OPTO-SMD-4_L4.6-W6.5-P2.54-LS10.3-BL",
+          "U2",
+          {
+            "Supplier": "LCSC",
+            "Manufacturer": "VISHAY",
+            "Manufacturer Part": "SFH6206-3T",
+            "Contributor": "PoulErik",
+            "Supplier Part": "LTV814",
+            "JLCPCB Part Class": "Extended Part",
+            "spiceSymbolName": "LTV814 AC Optocoupler",
+            "puuid": "1e518fed228543dbb39ea0fed05f6d8e",
+            "uuid": "28c96e247dbf4606b1f42c082b1c4540"
+          }
+        ]
+      ],
+      "updateTime": 1703646192,
+      "createTime": 1686138179,
+      "histories": [],
+      "created_at": "2023-06-07 13:42:59",
+      "updated_at": "2023-12-27 04:03:12"
+    },
+    {
+      "uuid": "0a0a744bf66a8e7ffd50112704a3dd23",
+      "puuid": "91469585af087b9a87a407eb5a8b3212",
+      "title": "PCB_Linkee",
+      "filename": "PCB_Linkee.json",
+      "description": "",
+      "docType": "3",
+      "master": "",
+      "thumb": "/images/thumb-default.png",
+      "components": {
+        "6924b36489de4921bb29ca14bf27c33f": 1,
+        "398691f1f785460098bbe5ee6590333c": 3,
+        "562d77a546a24e4f83c78207be689c00": 1,
+        "1e518fed228543dbb39ea0fed05f6d8e": 1
+      },
+      "BOM": [],
+      "updateTime": 1686170155,
+      "createTime": 1686160665,
+      "histories": [],
+      "created_at": "2023-06-07 19:57:45",
+      "updated_at": "2023-06-07 22:35:55"
+    }
+  ],
+  "sort": [],
+  "title": "Linkee",
+  "foldername": "Linkee",
+  "schfilename": "Linkee.json",
+  "schfilemtime": 1703646195739
+}
