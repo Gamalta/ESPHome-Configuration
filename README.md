@@ -14,6 +14,7 @@ python -m venv .venv
 
 ```bash
 # linux
+sudo su             #via sudo sinon téléversage impossible
 source .venv/bin/activate
 # windows
 .\.venv\Scripts\activate
@@ -46,3 +47,9 @@ Paramètres >> Appareils et Services >> ESPHome >> AJOUTER UN APPAREIL
 - necessite l'adress de l'Hôte ``ex: 192.168.0.[0-50]``
 - necessite le port de l'Hôte ``par default: 6053``
 - necessite la clé de chiffrement ``[device_name]_api_key dans secrets.yaml``
+
+## Génération d'une API Key
+
+```bash
+python api-key-generator.py
+```
