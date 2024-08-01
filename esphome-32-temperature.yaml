@@ -36,51 +36,51 @@ sensor:
   - platform: atc_mithermometer
     mac_address: "A4:C1:38:49:FD:59"
     temperature:
-      name: "Température Salon"
+      name: "temperature_salon"
     humidity:
-      name: "Humidité Salon"
+      name: "humidity_salon"
     battery_level:
-      name: "ATC Salon Battery-Level"
+      name: "battery-level-ATC-salon"
     battery_voltage:
-      name: "ATC Salon Battery-Voltage"
+      name: "battery-voltage-ATC-salon"
     signal_strength:
-      name: "ATC Salon Signal"
-  #Chambre
+      name: "signal-ATC-salon"
+  #Bedroom
   - platform: atc_mithermometer
     mac_address: "A4:C1:38:2D:32:8D"
     temperature:
-      name: "Température Chambre"
+      name: "temperature_bedroom"
     humidity:
-      name: "Humidité Chambre"
+      name: "humidity_bedroom"
     battery_level:
-      name: "ATC Chambre Battery-Level"
+      name: "battery-level-ATC-bedroom"
     battery_voltage:
-      name: "ATC Chambre Battery-Voltage"
+      name: "battery-voltage-ATC-bedroom"
     signal_strength:
-      name: "ATC Chambre Signal"
-  #Salle de bain
+      name: "signal-ATC-bedroom"
+  #Bedroom 2
   - platform: atc_mithermometer
     mac_address: "A4:C1:38:36:80:5E"
     temperature:
-      name: "Température Salle de bain"
+      name: "temperature_bedroom2"
     humidity:
-      name: "Humidité Salle de bain"
+      name: "humidity_bedroom2"
     battery_level:
-      name: "ATC Salle de bain Battery-Level"
+      name: "battery-level-ATC-bedroom2"
     battery_voltage:
-      name: "ATC Salle de bain Battery-Voltage"
+      name: "battery-voltage-ATC-bedroom2"
     signal_strength:
-      name: "ATC Salle de bain Signal"
-  #Garage
+      name: "signal-ATC-bedroom2"
+  #Office
   - platform: atc_mithermometer
     mac_address: "A4:C1:38:7C:DB:B0"
     temperature:
-      name: "Température Garage"
+      name: "temperature_office"
     humidity:
-      name: "Humidité Garage"
+      name: "humidity_office"
     battery_level:
-      name: "ATC Garage Battery-Level"
+      name: "battery-level-ATC-office"
     battery_voltage:
-      name: "ATC Garage Battery-Voltage"
+      name: "battery-voltage-ATC-office"
     signal_strength:
-      name: "ATC Garage Signal"
+      name: "signal-ATC-office"
