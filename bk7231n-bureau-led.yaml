@@ -14,6 +14,7 @@ api:
     key: !secret bk7231n_bureau_led_api_key
 
 ota:
+  platform: esphome
   password: !secret bk7231n_bureau_led_ota_password
 
 wifi:

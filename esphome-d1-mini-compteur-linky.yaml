@@ -14,6 +14,7 @@ api:
     key: !secret esphome_d1_mini_compteur_linky_api_key
 
 ota:
+  platform: esphome
   password: !secret esphome_d1_mini_compteur_linky_ota_password
 
 wifi:
